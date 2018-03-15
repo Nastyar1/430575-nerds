@@ -1,0 +1,234 @@
+body{margin: 0 auto;
+  padding: 0;
+  width: 1440px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.page-header{
+  background-color: #eeeeee;
+}
+
+a{
+  text-decoration: none;
+}
+.main-navigation{
+  font-size: 16px;
+  line-height: 30px;
+  color: #000000;
+  text-transform: uppercase;
+  font-weight: 500;
+}
+
+button{
+  font-size: 16px;
+  line-height: 18px;
+  text-transform: uppercase;
+  font-weight: 500;
+  color: #ffffff;
+  background-color: #fb565a;
+  border: none;}
+
+  button:hover{
+    background-color: #e74246;
+  }
+
+  button:active{
+    background-color: #d7373b;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.10);
+    color: rgba(255, 255, 255, 0.30);
+  }
+
+  .main-navigation-logo{
+    content: "";
+    display: inline-block;
+    background-image: url("../img/nerds-logo.svg");
+    width: 160px;
+    height: 66px;
+    background-repeat: no-repeat;
+  }
+
+  .main-navigation-list{
+    list-style: none;
+  }
+
+  .main-navigation a{
+    color: #000000;
+  }
+
+  .main-navigation a:hover{
+    color: #fb565a;
+  }
+
+  .main-navigation a:focus{
+    color: rgba(0, 1, 1, 0.30);;
+  }
+
+  .main-navigation a:active{
+    text-decoration: underline red;
+    color: #000000;
+  }
+
+  .advantages{
+    background-color: #eeeeee;
+  }
+
+  .slide-title{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+  }
+
+  .features-item-caption{
+    font-size: 24px;
+    line-height: 30px;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .button-green{
+    background-color: #00ca74;
+  }
+
+  .button-yellow{
+    background-color: #efc84a;
+  }
+
+  .button-green:hover{
+    background-color: #00bc6c;
+  }
+
+  .button-green:active{
+    background-color: #00aa62;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.10);
+    color: rgba(255, 255, 255, 0.30);
+  }
+
+  .button-yellow:hover{
+    background-color: #eab534;
+  }
+
+  .button-yellow:active{
+    background-color: #e5a722;
+    box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.10);
+    color: rgba(255, 255, 255, 0.30);
+  }
+
+  .presentation-caption{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+  }
+
+  .presentation b{
+    font-weight: 700px;
+    text-transform: uppercase;
+  }
+
+  .order{
+    list-style: none;
+  }
+
+  .presentation-table-item1{
+    font-size: 45px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .main-studio_logo_link img{
+    opacity: 0.2;
+  }
+
+  .main-studio_logo_link img:hover{
+    opacity: 100;
+  }
+
+  .main-studio_logo_link img:active{
+    opacity: 0.1;
+  }
+
+  .contacts-block-text b{
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+
+  .contacts-block-text p{
+    line-height: 18px;
+    color: #666666;
+  }
+
+  .footer-social-text h3{
+    font-size: 36px;
+    line-height: 36px;
+    font-weight: 700;
+  }
+
+  .footer-social-icon{
+    list-style: none;
+  }
+
+  .modal-close-cross{
+    opacity: 0.3;
+  }
+
+  .modal-close-cross:hover{
+    opacity: 100;
+  }
+
+  .modal-close-cross:active{
+    opacity: 0.1;
+  }
+
+  .modal h2{
+    font-size: 45px;
+    line-height: 45px;
+    font-weight: 500;
+  }
+
+  .login-form label{
+    font-weight: 700;
+  }
+
+  .login-form input{
+    border: 2px solid #d7dcde;
+    outline: none;
+    color: #444444;
+  }
+
+
+  .login-form input:hover{
+    border-color: #b4b9bb;
+  }
+
+  .login-form input:focus{
+    border-color: #000000;
+    color:  #000000;
+  }
+
+  .login-form input:invalid{
+    border-color: red;
+    color: red;
+  }
+
+  .login-icon-user::-webkit-input-placeholder,
+  .login-icon-mail::-webkit-input-placeholder,
+  .login-icon-text::-webkit-input-placeholder{
+    font-family: "Roboto";
+    font-size: 16px;
+    color: rgba(68, 68, 68, 0.5);
+  }
+
+  .page-main-container{
+    background-color: #eeeeee;
+  }
+
+  .page-main-container h1{
+    font-size: 55px;
+    line-height: 55px;
+    font-weight: 500;
+  }
+
+  .filter{
+    list-style: none;
+  }

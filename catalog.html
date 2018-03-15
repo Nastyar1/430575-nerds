@@ -2,22 +2,27 @@
 <head>
   <meta charset="utf-8">
   <title>HTML Academy: Нёрдс</title>
+  <link href="css/normalize.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic,cyrillic-ext" rel="stylesheet">
 </head>
 <body>
   <header class="page-header">
     <nav class="main-navigation">
-      <a class="main-navigation-logo">Лого Нёрдс</a>
+      <a class="main-navigation-logo" href="#"></a>
       <ul class="main-navigation-list">
-        <li class="main-navigation-item"><a href="studio.html">Студия</a></li>
-        <li class="main-navigation-item"><a href="customers.html">Клиенты</a></li>
-        <li class="main-navigation-item-current"><a href="shop.html">Магазин</a></li>
-        <li class="main-navigation-item"><a href="contacts.html">Контакты</a></li>
+        <li class="main-navigation-item"><a href="#">Студия</a></li>
+        <li class="main-navigation-item"><a href="#">Клиенты</a></li>
+        <li class="main-navigation-item"><a href="#">Магазин</a></li>
+        <li class="main-navigation-item"><a href="#">Контакты</a></li>
       </ul>
-      <a class="main-navigation-basket">Корзина</a>
-    </nav>
-  </header>
+      <a class="main-navigation-basket" href="#">
+        <svg xmlns="http://www.w3.org/2000/svg" width="15" height="15" viewBox="0 0 15 15"><circle fill="#a6a6a6" cx="4.5" cy="13.5" r="1.5"/><circle fill="#a6a6a6" cx="12.5" cy="13.5" r="1.5"/><path fill="#a6a6a6" d="M15 2H4.07l-.422-2H0v2h2.031l1.985 9H15V9H9.441L15 6.951z"/></svg>Корзина</a>
+      </nav>
+    </header>
   <main class="container">
-    <h1 class="containercaption">Магазин готовых шаблонов</h1>
+    <div class="page-main-container">
+    <h1>Магазин готовых шаблонов</h1></div>
 
     <section class="filters">
       <h2 class="visually-hidden">Фильтр товаров</h2>
@@ -49,7 +54,7 @@
         </fieldset>
         <fieldset>
           <legend>Особенности:</legend>
-          <ul>
+          <ul class="filter">
             <li class="filter-features">
               <input id="filter-slider" class="visually-hidden filter-input2" type="checkbox" name="advantage block" checked>
               <label class="filter-label" for="filter-slider">Слайдер</label>
