@@ -231,4 +231,125 @@ button{
 
   .filter{
     list-style: none;
+    line-height: 20px;
   }
+
+  .filters fieldset{
+    border: none;
+  }
+
+  .filters legend{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.min-price,
+.max-price{
+  text-transform: uppercase;
+}
+
+.filter a{
+  color: #283136;
+}
+
+.filter a:hover{
+color: #000000;
+}
+
+.filter a:disabled{
+  color: rgba(0, 0, 0, 0.3)
+}
+
+.filter-button{
+  background-color: #eeeeee;
+  color: #000000;
+  }
+
+  .filter-button:hover{
+  background-color: #dfdfdf;
+}
+
+.filter-button:active{
+  background-color: #d5d5d5;
+box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.10);
+color: rgba(0, 0, 0, 0.30);
+}
+
+.main-sorting-list{
+  list-style: none;
+}
+
+.main-sorting-list a{
+  color: rgba(0, 0, 0, 0.30);
+}
+
+.main-sorting-list a:hover{
+  color: rgba(0, 0, 0, 0.60);
+}
+
+.main-sorting-list a:focus{
+  color: #000000;
+}
+
+.main-sorting-list a:active{
+  color: #000000;
+}
+
+.sorting{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.switch path{
+  fill: rgba(0, 0, 0, 0.2);
+}
+
+.switch path:hover{
+  fill: #a6a6a6;
+}
+
+.switch path:active{
+  fill: #231f20;
+}
+
+.catalog-list{
+  list-style: none;
+}
+
+.order-caption{
+  font-size: 18px;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #000000;
+}
+
+.order-text{
+    color: #666666;
+}
+
+.pagination-list{
+  list-style: none;
+}
+
+.pagination-list-numeral{
+  background-color: #eeeeee;
+  color: #000000;
+  font-weight: 500;
+}
+
+.pagination-list-numeral:hover{
+  background-color: #dfdfdf;
+}
+
+.pagination-list-numeral:focus{
+  background-color: #d5d5d5;
+box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.10);
+color: rgba(0, 0, 0, 0.30);
+}
+
+.button-active{
+  border: 3px solid #dbdbdb;
+  background-color: white;
+}
