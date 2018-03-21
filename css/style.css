@@ -283,6 +283,8 @@ button{
   }
 
   .main-sorting-list a{
+    font-size: 14px;
+    text-transform: uppercase;
     color: rgba(0, 0, 0, 0.30);
   }
 
@@ -335,17 +337,20 @@ button{
     list-style: none;
   }
 
-  .pagination-list-numeral{
+  .pagination-list-numeral,
+  .pagination-list-next{
     background-color: #eeeeee;
     color: #000000;
     font-weight: 500;
   }
 
-  .pagination-list-numeral:hover{
+  .pagination-list-numeral:hover,
+  .pagination-list-next:hover{
     background-color: #dfdfdf;
   }
 
-  .pagination-list-numeral:focus{
+  .pagination-list-numeral:focus,
+  .pagination-list-next:focus{
     background-color: #d5d5d5;
     box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.10);
     color: rgba(0, 0, 0, 0.30);
@@ -383,7 +388,7 @@ button{
     justify-content: space-between;
     align-items: center;
     min-height: 116px;
-    padding-left: 140px;
+    margin-left: 140px;
     /* padding-top: 17px; */
   }
 
@@ -435,6 +440,7 @@ button{
   display: inline-block;
   width: 8px;
   height: 8px;
+  /* padding: 8px; */
   margin: 0 3px;
   background: white;
   border: 5px solid white;
@@ -442,6 +448,7 @@ button{
   border-radius: 50%;
   cursor: pointer;
 }
+
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
 #btn-3:checked ~ .slider-controls label[for="btn-3"] {
@@ -651,7 +658,7 @@ margin-top: 27px;
   align-items: center;
   margin-left: 140px;
   border-bottom: 2px solid #eeeeee;
-  margin-bottom: 80px;
+  margin-bottom: 79px;
 }
 
 .contacts{
@@ -691,4 +698,173 @@ margin-top: 27px;
 .address{
   margin: 0;
   margin-top: 25px;
+}
+
+.social-button{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #e1e1e1;
+  border-radius: 50px;
+  width: 80px;
+  height: 80px;
+}
+
+.social-button:hover{
+  background-color: #e74246;
+}
+
+.social-button:active{
+  background-color: #d7373b;
+  box-shadow: inset 0 3px 0 rgba(0, 1, 1, 0.10);
+}
+
+.social-button svg:active{
+  fill: #e37376;
+}
+
+.footer-social{
+  display: flex;
+  align-items: center;
+  margin-top: 65px;
+}
+
+.footer-social-icon{
+  display: flex;
+  width: 260px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-left: 140px;
+  margin-right: 140px;
+}
+
+.footer-social-text h3{
+  margin: 0;
+margin-bottom: 13px;
+  }
+
+.footer-social-text p{
+  margin: 0;
+}
+
+.modal-block{
+  display: flex;
+  width: 960px;
+  height: 590px;
+  flex-direction: column;
+  /* временно */
+  padding-top: 73px;
+  padding-left: 100px;
+  /* временно */
+  background-color: #b3b0a9;
+  /* box-shadow:  0  0 20px 40px rgba(0, 1, 1, 0.75); */
+}
+
+.modal-caption{
+  display: flex;
+
+}
+
+.modal-caption h2{
+  margin: 0;
+}
+
+/* catalog */
+
+.page-header.catalog{
+  height: 356px;
+}
+
+.page-main-container h1{
+  margin: 0;
+  margin-top: 75px;
+  margin-left: 358px;
+}
+
+.filters{
+  display: flex;
+  width: 260px;
+  margin-left: 140px;
+  margin-top: 57px;
+  margin-right: 140px;
+}
+
+.filters fieldset{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper-sorting{
+  display: flex;
+  flex-direction: row;
+  }
+
+.catalog-list{
+  display: flex;
+  flex-wrap: wrap;
+  width: 760px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+
+}
+
+.main-sorting{
+  display: flex;
+  align-items: center;
+  margin-top: 53px;
+  margin-bottom: 60px;
+}
+
+.main-sorting-list{
+  display: flex;
+  width: 271px;
+  justify-content: space-between;
+  padding: 0;
+  margin: 0;
+  margin-right: 48px;
+}
+
+.sorting{
+  margin-right: 269px;
+}
+
+.switch a{
+  padding-right: 18px;
+}
+
+.pagination-list{
+  display: flex;
+  margin: 0;
+  padding: 0;
+  margin-top: 60px;
+  margin-bottom: 60px;
+}
+
+.pagination-list-numeral{
+  display: block;
+  width: 50px;
+  height: 50px;
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 3px;
+}
+
+.pagination-list-next{
+  display: block;
+  width: 260px;
+  height: 50px;
+  background-color: #eeeeee;
+  border: 0;
+  border-radius: 3px;
+}
+
+.pagination-active{
+  border: 3px solid #dbdbdb;
+  background-color: white;
+}
+
+.pagination-list li{
+  padding-right: 11px;
 }
