@@ -28,13 +28,23 @@
           <section class="filters">
             <h2 class="visually-hidden">Фильтр товаров</h2>
             <form class="filter" method="get" action="https://echo.htmlacademy.ru">
-              <fieldset>
+              <fieldset class="filter-item">
                 <legend>Стоимость:</legend>
-                <label><input type="range" name="radio"></label>
-                <label class="min-price">от <input type="text" name="min-price" value="0">
-                </label>
-                <label class="max-price">до <input type="text" name="max-price" value="15000">
-                </label>
+                <div class="range-filter">
+                  <div class="range-controls">
+                  <div class="scale">
+                    <div class="bar"></div>
+                  </div>
+                  <div class="toggle toggle-min"></div>
+                  <div class="toggle toggle-max"></div>
+                </div>
+                <div class="price-controls">
+                  <label class="min-price">от <input type="text" name="min-price" value="0">
+                  </label>
+                  <label class="max-price">до <input type="text" name="max-price" value="15000">
+                  </label>
+                </div>
+                </div>
               </fieldset>
               <fieldset>
                 <legend>Сетка:</legend>
