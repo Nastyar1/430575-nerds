@@ -9,7 +9,7 @@
 <body>
   <header class="page-header catalog">
     <nav class="main-navigation">
-      <a class="main-navigation-logo" href="#"></a>
+      <a class="main-navigation-logo" href="index.html"></a>
       <ul class="main-navigation-list">
         <li class="main-navigation-item"><a href="#">Студия</a></li>
         <li class="main-navigation-item"><a href="#">Клиенты</a></li>
@@ -22,7 +22,6 @@
       <div class="page-main-container">
         <h1>Магазин готовых шаблонов</h1></div>
       </header>
-
       <main class="container">
         <div class="wrapper-sorting">
           <section class="filters">
@@ -32,66 +31,65 @@
                 <legend>Стоимость:</legend>
                 <div class="range-filter">
                   <div class="range-controls">
-                  <div class="scale">
-                    <div class="bar"></div>
+                    <div class="scale">
+                      <div class="bar"></div>
+                    </div>
+                    <div class="toggle toggle-min"></div>
+                    <div class="toggle toggle-max"></div>
                   </div>
-                  <div class="toggle toggle-min"></div>
-                  <div class="toggle toggle-max"></div>
-                </div>
-                <div class="price-controls">
-                  <label class="min-price">от <input type="text" name="min-price" value="0">
-                  </label>
-                  <label class="max-price">до <input type="text" name="max-price" value="15000">
-                  </label>
-                </div>
+                  <div class="price-controls">
+                    <label class="min-price">от <input type="text" name="min-price" value="0">
+                    </label>
+                    <label class="max-price">до <input type="text" name="max-price" value="15000">
+                    </label>
+                  </div>
                 </div>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-grid">
                 <legend>Сетка:</legend>
-                <ul class="filter">
-                  <li class="filter-option"><a href="info.html">
-                    <input id="filter-adaptive" class="visually-hidden filter-input" type="radio" name="adaptive" checked>
-                    <label class="filter-label" for="filter-adaptive">Адаптивная</label></a>
+                <ul class="filter-grid-list">
+                  <li class="filter-option">
+                    <input id="filter-adaptive" class="visually-hidden filter-input" type="radio" name="adaptive" value="a" checked>
+                    <label class="filter-label" for="filter-adaptive">Адаптивная</label>
+                </li>
+                  <li class="filter-option">
+                    <input id="filter-fixed" class="visually-hidden  filter-input" type="radio" name="adaptive" value="b" disabled>
+                    <label class="filter-label" for="filter-fixed">Фиксированная</label>
                   </li>
                   <li class="filter-option"><a href="info.html">
-                    <input id="filter-fixed" class="visually-hidden  filter-input" type="radio" name="adaptive">
-                    <label class="filter-label" for="filter-fixed">Фиксированная</label></a>
-                  </li>
-                  <li class="filter-option"><a href="info.html">
-                    <input id="filter-fixed" class="visually-hidden filter-input" type="radio" name="adaptive">
-                    <label class="filter-label" for="filter-fixed">Резиновая</label></a>
-                  </li>
+                    <input id="filter-rubber" class="visually-hidden  filter-input" type="radio" name="adaptive" value="c">
+                    <label class="filter-label" for="filter-rubber">Резиновая</label>
+                </li>
                 </ul>
               </fieldset>
-              <fieldset>
+              <fieldset class="filter-features">
                 <legend>Особенности:</legend>
-                <ul class="filter">
-                  <li class="filter-features"><a href="info.html">
+                <ul class="filter-features-list">
+                  <li class="filter-features">
                     <input id="filter-slider" class="visually-hidden filter-input2" type="checkbox" name="advantage block" checked>
                     <label class="filter-label" for="filter-slider">Слайдер</label></a>
                   </li>
                   <li class="filter-features"><a href="info.html">
-                    <input id="filter-advantage block" class="visually-hidden filter-input2" type="checkbox" name="advantage block">
-                    <label class="filter-label" for="filter-advantage block">Блок преимуществ</label></a>
+                    <input id="filter-advantage block" class="visually-hidden filter-input2" type="checkbox" name="advantage block" disabled>
+                    <label class="filter-label" for="filter-advantage block">Блок преимуществ</label>
                   </li>
-                  <li class="filter-features"><a href="info.html">
+                  <li class="filter-features">
                     <input id="filter-news" class="visually-hidden filter-input2" type="checkbox" name="advantage block" checked>
-                    <label class="filter-label" for="filter-news">Новости</label></a>
+                    <label class="filter-label" for="filter-news">Новости</label>
                   </li>
-                  <li class="filter-features"><a href="info.html">
+                  <li class="filter-features">
                     <input id="filter-gallery" class="visually-hidden filter-input2" type="checkbox" name="advantage block">
-                    <label class="filter-label" for="filter-gallery">Галерея</label></a>
+                    <label class="filter-label" for="filter-gallery">Галерея</label>
                   </li>
-                  <li class="filter-features"><a href="info.html">
+                  <li class="filter-features">
                     <input id="filter-basket" class="visually-hidden filter-input2" type="checkbox" name="advantage block">
-                    <label class="filter-label" for="filter-basket">Корзина</label></a>
+                    <label class="filter-label" for="filter-basket">Корзина</label>
                   </li>
                 </ul>
               </fieldset>
               <button class="filter-button" type="submit">Показать</button>
             </form>
           </section>
-
           <section class="catalog">
             <h2 class="visually-hidden">Каталог проектов</h2>
             <div class="main-sorting">
@@ -140,7 +138,7 @@
                       </div>
                       <div class="catalog-item-order">
                         <p class="order-caption">barbershop</p>
-                        <p class="order-text">Сайт салоны красоты. Для мужчин, да.</p>
+                        <p class="order-text">Сайт салоны красоты.<br> Для мужчин, да.</p>
                         <button class="order-button">9 900 руб.</button>
                       </div>
                     </a>
@@ -164,7 +162,7 @@
                           </div>
                           <div class="catalog-item-order">
                             <p class="order-caption">aplus</p>
-                            <p class="order-text">Лендинг курсов повышения квалификации</p>
+                            <p class="order-text">Лендинг курсов повышения<br> квалификации</p>
                             <button class="order-button">9 900 руб.</button>
                           </div>
                         </a>
@@ -177,7 +175,7 @@
                           </div>
                           <div class="catalog-item-order">
                             <p class="order-caption">kvast</p>
-                            <p class="order-text">Промо-сайт производителя крафтового кваста</p>
+                            <p class="order-text">Промо-сайт производителя<br> крафтового кваста</p>
                             <button class="order-button">9 900 руб.</button>
                           </div>
                         </a>
