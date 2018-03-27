@@ -337,6 +337,10 @@ button{
     fill: #010101;
   }
 
+  .switch-down{
+    margin-right: 14px;
+  }
+
   .catalog-list{
     list-style: none;
   }
@@ -937,7 +941,7 @@ button{
     display: flex;
     margin: 0;
     padding: 0;
-    margin-top: 29px;
+    margin-top: 27px;
     margin-bottom: 60px;
   }
 
@@ -1032,10 +1036,14 @@ button{
     font-size: 0;
   }
 
+  .catalog-item-browser{
+    height: 40px;
+  }
+
   .price-controls input {
     width: 80px;
-    padding: 9px 10px;
-    margin-left: 10px;
+    padding: 9px 0;
+    margin-left: 9px;
     font-family: Roboto, Arial, sans-serif;
     font-size: 16px;
     text-align: center;
@@ -1176,9 +1184,6 @@ button{
     background-color: #eeeeee;
   }
 
-  /* .container{
-  margin-bottom: 63px;
-  } */
 
   .container-footer{
     margin-top: 63px;
@@ -1193,14 +1198,9 @@ button{
     margin-bottom: 7px;
   }
 
-
-  .footer-social-catalog{
-    margin-bottom: 10px;
-  }
-
   .catalog-item{
     position: relative;
-    margin-bottom: 32px;
+    margin-bottom: 26px;
   }
 
   .catalog-item-order p{
