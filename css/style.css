@@ -35,8 +35,8 @@ button{
   border: none;}
 
 button:hover{
-  background-color: #e74246;
-  }
+ background-color: #e74246;
+ }
 
 button:active{
   background-color: #d7373b;
@@ -45,34 +45,46 @@ button:active{
   }
 
 .main-navigation-logo{
-  content: "";
-  display: inline-block;
-  background-image: url("../img/nerds-logo.svg");
-  width: 160px;
-  height: 66px;
-  background-repeat: no-repeat;
-  margin-top: 50px;
+  margin-top: 56px;
+  }
+
+.main-navigation-logo-svg:hover{
+ fill: #303030;
+  }
+
+.main-navigation-logo-svg:active{
+  fill: #a6a6a6;
   }
 
 .main-navigation-list{
   list-style: none;
   }
 
-.main-navigation a{
+.main-navigation-list a{
   color: #000000;
   }
 
-.main-navigation a:hover{
+.main-navigation-list a:hover{
   color: #fb565a;
   }
 
-.main-navigation a:focus{
-  color: rgba(0, 1, 1, 0.30);;
+.main-navigation-list a:focus{
+  color: rgba(0, 1, 1, 0.30);
   }
 
-.main-navigation a:active{
-  border-bottom: 2px solid red;
-  color: #000000;
+.main-navigation-item-shop{
+ position: relative;
+ }
+
+.main-navigation-item-shop::after{
+  content: "";
+  display: inline-block;
+  position: absolute;
+  top: 33px;
+  right: 1px;
+  height: 2px;
+  width: 74px;
+  background-color: #fb565a;
   }
 
 .advantages{
@@ -164,6 +176,11 @@ button:active{
   color: #666666;
   }
 
+.contacts-block-text a{
+  line-height: 18px;
+  color: #666666;
+  }
+
 .footer-social-text h3{
   font-size: 36px;
   line-height: 36px;
@@ -201,6 +218,10 @@ button:active{
   outline: none;
   color: #444444;
   border-radius: 3px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 15px;
   }
 
 .login-form textarea{
@@ -208,19 +229,26 @@ button:active{
   outline: none;
   color: #444444;
   border-radius: 3px;
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  padding-left: 15px;
+  padding-top: 10px;
   }
 
-
-.login-form input:hover{
+.login-form input:hover,
+.login-form textarea:hover{
   border-color: #b4b9bb;
   }
 
-.login-form input:focus{
+.login-form input:focus,
+.login-form textarea:focus{
   border-color: #000000;
   color:  #000000;
   }
 
-.login-form input:invalid{
+.login-form input:invalid,
+.login-form textarea:invalid{
   border-color: #e74246;
   color: #e74246;
   }
@@ -316,6 +344,18 @@ button:active{
   color: #000000;
   }
 
+.main-navigation-basket{
+  color: #000000;
+  }
+
+.main-navigation-basket:hover{
+  color: #fb565a;
+  }
+
+.main-navigation-basket:active{
+  color: rgba(0, 1, 1, 0.30);
+  }
+
 .sorting{
   font-size: 18px;
   font-weight: 700;
@@ -390,7 +430,6 @@ button:active{
   input[type="checkbox"].visually-hidden,
   input[type="radio"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
@@ -409,18 +448,18 @@ button:active{
   width: 1160px;
   justify-content: space-between;
   align-items: center;
-  min-height: 116px;
+  height: 116px;
   margin-left: 140px;
   }
 
 .main-navigation-list{
   display: flex;
-  width: 440px;
+  width: 438px;
   justify-content: space-between;
   margin: 0;
   padding: 0;
-  margin-top: 64px;
-  margin-right: 40px;
+  margin-top: 63px;
+  margin-right: 44px;
   }
 
 .main-navigation-basket svg{
@@ -439,7 +478,7 @@ button:active{
   margin: 0 auto;
   }
 
-.slider input[type=radio] {
+.slider input[type=radio]{
   position:absolute;
   opacity:0;
   }
@@ -447,8 +486,8 @@ button:active{
 .slider-controls{
   position: absolute;
   bottom: 95px;
-  left: 50%;
-  width: 200px;
+  left: 587px;
+  width: 182px;
   height: 18px;
   margin-left: -99px;
   text-align: center;
@@ -469,7 +508,7 @@ button:active{
 
 #btn-1:checked ~ .slider-controls label[for="btn-1"],
 #btn-2:checked ~ .slider-controls label[for="btn-2"],
-#btn-3:checked ~ .slider-controls label[for="btn-3"] {
+#btn-3:checked ~ .slider-controls label[for="btn-3"]{
   background:#c1c1c1;
   }
 
@@ -477,11 +516,11 @@ button:active{
   background: #c1c1c1
   }
 
-  .slides{
-   margin: 0;
-   padding: 0;
-   list-style: none;
-   }
+.slides{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  }
 
 .slide{
   display: none;
@@ -491,7 +530,8 @@ button:active{
 .slide-title{
   max-width: 600px;
   margin: 0;
-  margin-bottom: 25px;
+  margin-bottom: 10px;
+  margin-top: 3px;
   font-size: 55px;
   line-height: 55px;
   font-weight: 500;
@@ -500,7 +540,7 @@ button:active{
 .slide-description{
   width: 420px;
   margin: 0;
-  margin-top: 27px;
+  margin-top: 25px;
   }
 
 .slide .btn{
@@ -519,19 +559,19 @@ button:active{
 .slide:nth-child(1){
   background-image:url("../img/nerdsindexslide1.png");
   background-repeat:no-repeat;
-  background-position:100% 0;
+  background-position:397px -2px;
   }
 
 .slide:nth-child(2){
   background-image:url("../img/nerdsindexslide2.png");
   background-repeat:no-repeat;
-  background-position:100% 10px;
+  background-position:398px -1px;
   }
 
 .slide:nth-child(3){
   background-image:url("../img/nerdsindexslide3.png");
   background-repeat:no-repeat;
-  background-position:100% 0;
+  background-position:400px -3px;
   }
 
 .slide{
@@ -573,7 +613,7 @@ button:active{
   width: 160px;
   height: 50px;
   margin: 0;
-  margin-top: 34px;
+  margin-top: 32px;
   }
 
 .features-item-text{
@@ -630,16 +670,27 @@ button:active{
 .list-orders{
   padding: 0;
   margin: 0;
-  margin-top: 25px;
+  margin-top: 23px;
   }
 
-.dash{
-  margin-right: 11px;
-  margin-bottom: 5px;
-  }
+.order{
+  position: relative;
+}
+
+.order::before{
+ content: "";
+ display: inline-block;
+ position: absolute;
+ top: 12px;
+ left: -36px;
+ height: 2px;
+ width: 25px;
+ background-color: #fb565a;
+ }
 
 .list-orders li{
   margin-bottom: 24px;
+  margin-left: 36px;
   }
 
 .presentation-table-logo{
@@ -675,11 +726,16 @@ button:active{
   width: 1160px;
   height: 168px;
   padding-top: 8px;
-  justify-content: space-around;
+  padding-left: 28px;
+  /* justify-content: space-around; */
   align-items: center;
   margin-left: 140px;
   border-bottom: 2px solid #eeeeee;
   margin-bottom: 78px;
+  }
+
+.main-studio-logo-link{
+  padding-right: 92px;
   }
 
 .link1{
@@ -687,10 +743,27 @@ button:active{
   margin-left: 3px;
   }
 
-  .link2{
-    margin-top: -3px;
-    margin-left: -3px;
-    }
+.link2{
+  margin-top: -3px;
+  margin-left: -3px;
+  }
+
+.presentation-logo a{
+  position: relative;
+  }
+
+.presentation-logo a:nth-child(1)::after,
+.presentation-logo a:nth-child(2)::after,
+.presentation-logo a:nth-child(3)::after{
+ content: "";
+  display: inline-block;
+  position: absolute;
+  width: 2px;
+  height: 52px;
+  background-color: #cececf;
+  top: 48px;
+  right: 47px;
+  }
 
 .contacts{
   position: relative;
@@ -715,7 +788,7 @@ button:active{
   align-items: center;
   justify-content: center;
   margin-left: 50px;
-  margin-top: 36px;
+  margin-top: 34px;
   }
 
 .contacts-block-text{
@@ -727,11 +800,11 @@ button:active{
 .address{
   margin: 0;
   margin-top: 26px;
+  margin-bottom: 16px;
   }
 
-  .phone{
-    margin: 0;
-    margin-top: 20px;
+.phone{
+  margin: 0;
   }
 
 .social-button{
@@ -820,25 +893,23 @@ button:active{
 
 .login-icon-user,
 .login-icon-mail{
-  width: 358px;
+  width: 340px;
   height: 45px;
   margin-top: 5px;
   }
 
+.login-icon-user{
+  font-family: "Roboto", Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  color: #f00;
+  padding-left: 15px;
+  }
+
 .login-icon-text{
-  width: 754px;
-  height: 110px;
+  width: 740px;
+  height: 102px;
   margin-top: 5px;
-  }
-
-.login-icon-user::-webkit-input-placeholder,
-.login-icon-mail::-webkit-input-placeholder{
-  padding-left: 14px;
-  }
-
-.login-icon-text::-webkit-input-placeholder{
-  padding-left: 12px;
-  padding-top: 9px;
   }
 
 .appointment-button{
@@ -850,7 +921,6 @@ button:active{
 .login-form-item1,
 .login-form-item2{
   width: 360px;
-
   }
 
 .modal label{
@@ -878,7 +948,7 @@ button:active{
 .page-main-container h1{
   margin: 0;
   margin-top: 75px;
-  margin-left: 358px;
+  margin-left: 356px;
   }
 
 .filters{
@@ -906,7 +976,6 @@ button:active{
   justify-content: space-between;
   padding: 0;
   margin: 0;
-
   }
 
 .main-sorting{
@@ -921,7 +990,7 @@ button:active{
   padding: 0;
   margin: 0;
   margin-right: 23px;
-  margin-top: 3px;
+  margin-top: 1px;
   }
 
 .main-sorting-list li{
@@ -938,6 +1007,7 @@ button:active{
 
 .sorting{
   margin-right: 266px;
+  margin-top: 2px;
   }
 
 .switch a{
@@ -948,8 +1018,8 @@ button:active{
   display: flex;
   margin: 0;
   padding: 0;
-  margin-top: 27px;
-  margin-bottom: 60px;
+  margin-top: 25px;
+  margin-bottom: 58px;
   }
 
 .pagination-list-numeral{
@@ -962,7 +1032,9 @@ button:active{
   }
 
 .pagination-list-next{
-  display: block;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 260px;
   height: 50px;
   background-color: #eeeeee;
@@ -979,13 +1051,13 @@ button:active{
   padding-right: 11px;
   }
 
-.range-filter {
+.range-filter{
   width: 260px;
   margin-top: 53px;
   margin-bottom: 60px;
   }
 
-.range-controls {
+.range-controls{
   position: relative;
   height: 41px;
   margin-bottom: 15px;
@@ -996,18 +1068,18 @@ button:active{
   padding-left: 20px;
   }
 
-.range-controls .scale {
+.range-controls .scale{
   height: 2px;
   background: #d7dcde;
   }
 
-.range-controls .bar {
+.range-controls .bar{
   width: 70%;
   height: 2px;
   background: #00ca74;
   }
 
-.range-controls .toggle {
+.range-controls .toggle{
   position: absolute;
   top: 31px;
   left: 0;
@@ -1021,22 +1093,22 @@ button:active{
   cursor: pointer;
   }
 
-.range-controls .toggle-min {
+.range-controls .toggle-min{
   left: 18px;
   }
 
-.range-controls .toggle-max {
+.range-controls .toggle-max{
   left: 160px;
   }
 
-.price-controls label {
+.price-controls label{
   display: inline-block;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
   }
 
-.price-controls {
+.price-controls{
   font-size: 0;
   }
 
@@ -1044,7 +1116,7 @@ button:active{
   height: 40px;
   }
 
-.price-controls input {
+.price-controls input{
   width: 80px;
   padding: 9px 0;
   margin-left: 9px;
@@ -1057,7 +1129,7 @@ button:active{
   background: #f1f1f1;
   }
 
-.max-price {
+.max-price{
   text-align: right;
   }
 
@@ -1070,19 +1142,19 @@ button:active{
   }
 
 .filter-grid legend{
-    margin-bottom: 18px;
+  margin-bottom: 18px;
   }
 
 .filter-features legend{
-  margin-bottom: 23px;
+  margin-bottom: 20px;
   }
 
 .filter-grid-list li{
-  margin-bottom: 15px;
+  margin-bottom: 14px;
   }
 
 .filter-features-list li{
-  margin-bottom: 16px;
+  margin-bottom: 17px;
   }
 
 .filter-button{
@@ -1093,7 +1165,7 @@ button:active{
   cursor: pointer;
   }
 
-.filter-input ~ .filter-label::before {
+.filter-input ~ .filter-label::before{
   content: "";
   display: inline-block;
   background-image: url("../img/radio-off.svg");
@@ -1104,18 +1176,19 @@ button:active{
   opacity: 0.4;
   }
 
-.filter-input:checked ~ .filter-label::before {
+.filter-input:checked ~ .filter-label::before{
   content: "";
   display: inline-block;
   background-image: url("../img/radio-on.svg");
-  width: 25px;
-  height: 25px;
+  background-repeat: no-repeat;
+  width: 27px;
+  height: 27px;
   vertical-align: middle;
   margin-right: 11px;
   opacity: 0.4;
   }
 
-.filter-input2 ~ .filter-label::before {
+.filter-input2 ~ .filter-label::before{
   content: "";
   display: inline-block;
   background-image: url("../img/checkbox-off.svg");
@@ -1181,12 +1254,6 @@ button:active{
   color: rgba(40, 49, 54, 0.3);
   }
 
-.line{
-  width: 3px;
-  height: 52px;
-  background-color: #eeeeee;
-  }
-
 .container-footer{
   margin-top: 63px;
   margin-bottom: 77px;
@@ -1202,7 +1269,7 @@ button:active{
 
 .catalog-item{
   position: relative;
-  margin-bottom: 26px;
+  margin-bottom: 28px;
   }
 
 .catalog-item-order p{
@@ -1222,7 +1289,7 @@ button:active{
   flex-direction: column;
   align-items: center;
   width: 360px;
-  min-height: 231px;
+  height: 231px;
   text-align: center;
   background-color: #eeeeee;
   position: absolute;
@@ -1247,6 +1314,8 @@ button:active{
 
 .order-text{
   width: 224px;
+  height: 60px;
+  flex-wrap: wrap;
   padding-bottom: 32px;
   line-height: 19px;
   }
