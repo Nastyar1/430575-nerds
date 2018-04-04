@@ -7,15 +7,15 @@ body{
   line-height: 24px;
   position: relative;
   font-weight: 400;
-}
+  }
 
 .page-header{
   background-color: #eeeeee;
-}
+  }
 
 a{
   text-decoration: none;
-}
+  }
 
 .main-navigation{
   font-size: 16px;
@@ -23,7 +23,7 @@ a{
   color: #000000;
   text-transform: uppercase;
   font-weight: 500;
-}
+  }
 
 button{
   font-size: 16px;
@@ -32,11 +32,12 @@ button{
   font-weight: 500;
   color: #ffffff;
   background-color: #fb565a;
-  border: none;}
+  border: none;
+  }
 
 button:hover{
- background-color: #e74246;
- }
+  background-color: #e74246;
+  }
 
 button:active{
   background-color: #d7373b;
@@ -49,7 +50,7 @@ button:active{
   }
 
 .main-navigation-logo-svg:hover{
- fill: #303030;
+  fill: #303030;
   }
 
 .main-navigation-logo-svg:active{
@@ -73,12 +74,13 @@ button:active{
   }
 
 .main-navigation-item-shop{
- position: relative;
- }
+  position: relative;
+  }
 
 .main-navigation-item-shop::after{
   content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   top: 33px;
   right: 1px;
@@ -675,18 +677,19 @@ button:active{
 
 .order{
   position: relative;
-}
+  }
 
 .order::before{
- content: "";
- display: inline-block;
- position: absolute;
- top: 12px;
- left: -36px;
- height: 2px;
- width: 25px;
- background-color: #fb565a;
- }
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: absolute;
+  top: 12px;
+  left: -36px;
+  height: 2px;
+  width: 25px;
+  background-color: #fb565a;
+  }
 
 .list-orders li{
   margin-bottom: 24px;
@@ -755,8 +758,9 @@ button:active{
 .presentation-logo a:nth-child(1)::after,
 .presentation-logo a:nth-child(2)::after,
 .presentation-logo a:nth-child(3)::after{
- content: "";
+  content: "";
   display: inline-block;
+  vertical-align: middle;
   position: absolute;
   width: 2px;
   height: 52px;
@@ -1103,6 +1107,7 @@ button:active{
 
 .price-controls label{
   display: inline-block;
+  vertical-align: middle;
   width: 50%;
   font-size: 16px;
   text-transform: uppercase;
@@ -1138,7 +1143,7 @@ button:active{
   list-style: none;
   margin: 0;
   padding: 0;
-  margin-bottom:48px;
+  margin-bottom:47px;
   }
 
 .filter-grid legend{
@@ -1159,6 +1164,7 @@ button:active{
 
 .filter-button{
   display: inline-block;
+  vertical-align:middle;
   width: 260px;
   height: 50px;
   border-radius: 3px;
@@ -1169,8 +1175,9 @@ button:active{
   content: "";
   display: inline-block;
   background-image: url("../img/radio-off.svg");
-  width: 25px;
-  height: 25px;
+  background-repeat: no-repeat;
+  width: 26px;
+  height: 26px;
   vertical-align: middle;
   margin-right: 11px;
   opacity: 0.4;
@@ -1181,8 +1188,8 @@ button:active{
   display: inline-block;
   background-image: url("../img/radio-on.svg");
   background-repeat: no-repeat;
-  width: 27px;
-  height: 27px;
+  width: 26px;
+  height: 26px;
   vertical-align: middle;
   margin-right: 11px;
   opacity: 0.4;
@@ -1272,10 +1279,6 @@ button:active{
   margin-bottom: 28px;
   }
 
-.catalog-item-order p{
-  margin: 0;
-  }
-
 .catalog-item:hover .main-images-svg{
   fill: #4d4d4d;
   }
@@ -1289,7 +1292,7 @@ button:active{
   flex-direction: column;
   align-items: center;
   width: 360px;
-  height: 231px;
+  min-height: 231px;
   text-align: center;
   background-color: #eeeeee;
   position: absolute;
@@ -1300,11 +1303,12 @@ button:active{
 .order-button{
   display: block;
   width: 200px;
-  height: 50px;
+  min-height: 50px;
   color: #ffffff;
   background-color: #fb565a;
   border: none;
   border-radius: 3px;
+  margin-bottom: 43px;
   }
 
 .order-caption{
@@ -1313,11 +1317,12 @@ button:active{
   }
 
 .order-text{
-  width: 224px;
-  height: 60px;
-  flex-wrap: wrap;
-  padding-bottom: 32px;
-  line-height: 19px;
+  max-width: 240px;
+  max-height: 380px;
+  min-height: 50px;
+  margin: 0 auto 17px;
+  line-height: 18px;
+  overflow: auto;
   }
 
 .order-text1{
